@@ -24,8 +24,8 @@ export default function TaskInput() {
     }
     
   return (
-    <form onSubmit={e => handleSubmit(e)} className='ml-[80px] my-3 flex'>
-        <input placeholder='დავალების აღწერა' type='text' value={description} onChange={e => setDescription(e.target.value)} className='py-2'/>
+    <form onSubmit={e => handleSubmit(e)} className='ml-[80px] my-6 flex'>
+        <input placeholder='დავალების აღწერა' type='text' value={description} onChange={e => setDescription(e.target.value)} className='py-2 pl-1'/>
         <select value={type} onChange={e => setType(e.target.value as Task_Type_Enum)} className='py-2'>
             <option value={Task_Type_Enum.LEARN}>{Task_Type_Enum.LEARN}</option>
             <option value={Task_Type_Enum.WORK}>{Task_Type_Enum.WORK}</option>

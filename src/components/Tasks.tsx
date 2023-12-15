@@ -9,8 +9,6 @@ export default function Tasks() {
     const learnTasks:TTask[] = tasks.filter(task => task.type === Task_Type_Enum.LEARN);
     const workTasks:TTask[] = tasks.filter(task => task.type === Task_Type_Enum.WORK);
 
-    console.log("Learn tasks - ", learnTasks)
-    console.log("work tasks - ", workTasks)
     return (
         <div className="grid grid-cols-2">
             <LearnTasks tasks={learnTasks}/>

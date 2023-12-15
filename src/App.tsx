@@ -7,7 +7,7 @@ function App() {
 
   return (
     <GlobalContextProvider>
-      <div>
+      <div className='w-[80%] mx-auto'>
         <TaskInput/>
         <Tasks/>
       </div>
